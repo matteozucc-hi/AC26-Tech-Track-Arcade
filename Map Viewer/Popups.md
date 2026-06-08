@@ -44,13 +44,6 @@ when(
 
 ### Return a User-Friendly Statement with Statistical Information
 
-Note how the Console() calls throughout the script help us get an idea about what is going on when we execute the script. This is great practice for troubleshooting your code and making it reusable for others.
-
-Below, we are creating arrays that will be populated by sums of total crowding per day of week and the number of each day of week we have to give us an average crowding by DOW.
-
-We initially create arrays that are filled with zeroes, on lines 35-38, then populate them with sums in lines 45-51. On lines 60-65, we can then divide the 2 by each other according to ordered day to return a dictionary of key value pairs - each day of the week and average crowding.
-
-Using the **suggestions tab** in the menu, we can then return a chart element for our pop-up, using the values we have created (line 75)
 ````js
 // Calculate and format the % difference in predicted vs actual station crowding
 
@@ -80,6 +73,14 @@ return `${crowdingTrend} 2025 was ${crowdingStatus} than expected by ${Abs(forma
 We can use Arcade blocks for more complex content, such as charts and rich text. The following are examples of how we can:
 
 ### Construct Charts Using Arcade
+Note how the Console() calls throughout the script help us get an idea about what is going on when we execute the script. This is great practice for troubleshooting your code and making it reusable for others.
+
+Below, we are creating arrays that will be populated by sums of total crowding per day of week and the number of each day of week we have to give us an average crowding by DOW.
+
+We initially create arrays that are filled with zeroes, on lines 35-38, then populate them with sums in lines 45-51. On lines 60-65, we can then divide the 2 by each other according to ordered day to return a dictionary of key value pairs - each day of the week and average crowding.
+
+Using the **suggestions tab** in the menu, we can then return a chart element for our pop-up, using the values we have created (line 75)
+
 ````js
 // -----------------------------------------------------------------------------
 // Load related crowding records
@@ -173,6 +174,8 @@ return {
 ### Perform Spatial Analysis on Related Records
 
 In the code snippet below, we are bringing in an unrelated dataset - not shown in our map - and seeing whether it intersects with our geometry (200m buffer around each station).
+
+We can then use html to construct a list of nearby places of interest.
 
 ````js
 // --------------------------------------------------------------------------------------
