@@ -4,7 +4,7 @@ Arcade can also be used to bring out insight from your data. Under the Styles op
 
 In the example below, we are doing a simple percentage difference calculation between two of our fields. This data does not exist in our original dataset but Arcade allows us to calculate it on the fly to drive our webmap.
 
-Lines 5-7 contain an if statement that stops a calculation if no value is detected in one field. This helps with avoiding errors downstream and improves performance.
+Lines 5-7 contain an if-statement that stops a calculation if no value is detected in one field. This helps with avoiding errors downstream and improves performance.
 
 ````js
 // Define Values

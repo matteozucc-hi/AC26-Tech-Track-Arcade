@@ -4,7 +4,7 @@ A common GIS workflow is to filter data spatially in order that our maps and app
 
 You can bring in data in filtered states straight within Experience Builder, under the Data Tab of the left-hand menu:
 
-![alt text](image.png)
+![alt text](<markdown-images/Screenshot 2026-06-09 120816.png>)
 
 At the point of adding data, we can use the **</>**  symbol to utilise Arcade. This allows us to manipulate our data:
 

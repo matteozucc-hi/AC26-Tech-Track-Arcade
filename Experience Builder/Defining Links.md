@@ -4,7 +4,7 @@ When setting links in Experience Builder widgets, e.g., buttons, Arcade can be u
 
 When defining a link, you have the option to write an Arcade script by clicking the **</>** symbol:
 
-![alt text](image-6.png)
+![alt text](<markdown-images/Screenshot 2026-06-09 123835.png>)
 
 
 Here is a simple script we used to check whether a link was missing and redirect users to a sightseeing website if none was found. This fixes broken buttons. A small change but a great usability enhancement.

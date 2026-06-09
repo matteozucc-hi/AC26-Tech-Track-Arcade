@@ -1,7 +1,8 @@
 # Define a Single Instance Data Structure for a List Widget (Data Expressions)
 
 When you have data you want to draw group level statistics from in a dashboard, using data expressions is a really handy way to do so. Data expressions can be defined at the point of widget creation:
-![alt text](image.png)
+
+![alt text](<markdown-images/Screenshot 2026-06-09 095422.png>)
 
 These expressions can then be reused for other widgets in your dashboard.
 

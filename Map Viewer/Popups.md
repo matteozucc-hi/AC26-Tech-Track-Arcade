@@ -6,7 +6,8 @@ There are two ways in which we can apply Arcade in popups:
 
 Together, we can use them to create informative and insightful displays for our readers. For example, we can use Arcade to create the following rich popup:
 
-![alt text](image-4.png)![alt text](image-5.png)
+![alt text](<markdown-images/Screenshot 2026-06-08 175013.png>)![alt text](<markdown-images/Screenshot 2026-06-08 175031.png>)
+
 
 ## Attribute Expressions
 
@@ -14,19 +15,21 @@ Attribute expressions allow you to write code that returns text you can place dy
 
 First, open the attribute expression menu:
 
-![alt text](image.png)
+![alt text](<markdown-images/Screenshot 2026-06-08 172155.png>)
+
 
 Create an expression:
 
-![alt text](image-1.png)
+![alt text](<markdown-images/Screenshot 2026-06-08 172536.png>)
+
 
 Once you've written an expression, add in or edit a text element in the popup menu:
 
-![alt text](image-2.png)
+![alt text](<markdown-images/Screenshot 2026-06-08 172907.png>)
 
 You can add in dynamic content from attribute expressions as you would normal dynamic text. It pastes as a curly bracket format with the prefix expression/expr, followed by a number.
 
-![alt text](image-3.png)
+![alt text](<markdown-images/Screenshot 2026-06-08 173106.png>)
 
 The code below contains a few example attribute expressions:
 
@@ -257,7 +260,7 @@ return {
 ````
 ## Extra Content! Construct Badges for Popups
 
-![alt text](image-6.png)
+![alt text](<markdown-images/Screenshot 2026-06-09 092045.png>)
 
 Are you also wondering how we got these underground line badges into our popups?
 

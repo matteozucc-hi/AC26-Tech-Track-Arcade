@@ -2,16 +2,16 @@
 
 In our experience builder, we have a text widget linked to our filter, so that the text displays gives readers an idea of how many records they are looking at:
 
-![alt text](image-2.png)
+![alt text](<markdown-images/Screenshot 2026-06-09 121642.png>)
 
 When a filter is applied:
 
-![alt text](image-3.png)
+![alt text](<markdown-images/Screenshot 2026-06-09 121708.png>)
 
 
 You can do this using Arcade in the text widget itself, by double-clicking to edit the text and selecting the **</>** option to bring up the editor:
 
-![alt text](image-4.png)
+![alt text](<markdown-images/Screenshot 2026-06-09 121800.png>)
 
 
 This is the code we used to link to our filter and display a message accordingly:

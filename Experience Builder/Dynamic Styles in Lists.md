@@ -6,7 +6,7 @@ In our application, we also have a list widget that changes background colour de
 
 To change list item background colours, select your list item, toggle on 'Dynamic style' and hit the settings cog to configure:
 
-![alt text](image-5.png)
+![alt text](<markdown-images/Screenshot 2026-06-09 123203.png>)
 
 You can then select Script > Arcade Editor and write your script. Below is an example we used to change our background colour:
 
