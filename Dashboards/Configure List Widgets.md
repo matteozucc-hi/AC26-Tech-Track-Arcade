@@ -63,7 +63,7 @@ return {
 
 Like popups, Dashboard list templates are built on html. The code below is some example html used to construct a list template with a custom layout (e.g., a # of stations call-out)
 
-````
+````html
 <div style="align-items:stretch;background-color:#363837;border-radius:8px;display:flex;justify-content:space-between;padding:12px;">
     <div style="padding-right:12px;">
         <div style="font-size:16px;margin-bottom:4px;">
