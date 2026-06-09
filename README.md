@@ -14,12 +14,13 @@ In this repository is Arcade code used in:
    - Symbology
    - Popup configuration
 - Dashboards, for:
-   - Data expressions
+   - Data expressions (creating grouped statistics tables)
    - List configuration
 - Experience Builder:
-   - Data Import
+   - Data expressions (filtering data when importing)
    - Dynamic text
    - List widget styles
+   - Handling missing URLs
 
 ### Data
 For our demo, we used data from the following sources:
