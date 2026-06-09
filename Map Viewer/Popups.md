@@ -255,3 +255,65 @@ return {
 };
 
 ````
+## Extra Content! Construct Badges for Popups
+
+![alt text](image-6.png)
+Are you also wondering how we got these underground line badges into our popups?
+
+Popups are constructed with html, so we can use html to create text surrounded by specific colours. The code below shows an example of how this can be done when one feature might match multiple badges (e.g., as King's Cross St. Pancras does)
+
+````js
+// -------------------------------------------------------------
+// Return Line badges to show in template
+// -------------------------------------------------------------
+// Construct line badges using html
+var bakerlooBadge = '<span style="background:#A45A2A;color:white;padding:3px 8px;border-radius:12px;font-size:12px;margin-right:4px;margin-top:2px;margin-bottom:2px;display:inline-block;">Bakerloo</span>';
+var centralBadge = '<span style="background:#DA291C;color:white;padding:3px 8px;border-radius:12px;font-size:12px;margin-right:4px;margin-top:2px;margin-bottom:2px;display:inline-block;">Central</span>';
+var circleBadge = '<span style="background:#FFCD00;color:white;padding:3px 8px;border-radius:12px;font-size:12px;margin-right:4px;margin-top:2px;margin-bottom:2px;display:inline-block;">Circle</span>'
+var districtBadge = '<span style="background:#007A33;color:white;padding:3px 8px;border-radius:12px;font-size:12px;margin-right:4px;margin-top:2px;margin-bottom:2px;display:inline-block;">District</span>';
+var hammersmithBadge ='<span style="background:#E89CAE;color:white;padding:3px 8px;border-radius:12px;font-size:12px;margin-right:4px;margin-top:2px;margin-bottom:2px;display:inline-block;">Hammersmith &amp; City</span>';
+var jubileeBadge ='<span style="background:#7C878E;color:white;padding:3px 8px;border-radius:12px;font-size:12px;margin-right:4px;margin-top:2px;margin-bottom:2px;display:inline-block;">Jubilee</span>';
+var metBadge ='<span style="background:#840B55;color:white;padding:3px 8px;border-radius:12px;font-size:12px;margin-right:4px;margin-top:2px;margin-bottom:2px;display:inline-block;">Metropolitan</span>';
+var northernBadge ='<span style="background:#000000;color:white;padding:3px 8px;border-radius:12px;font-size:12px;margin-right:4px;margin-top:2px;margin-bottom:2px;display:inline-block;">Northern</span>';
+var piccadillyBadge ='<span style="background:#10069F;color:white;padding:3px 8px;border-radius:12px;font-size:12px;margin-right:4px;margin-top:2px;margin-bottom:2px;display:inline-block;">Piccadilly</span>';
+var victoriaBadge ='<span style="background:#00A3E0;color:white;padding:3px 8px;border-radius:12px;font-size:12px;margin-right:4px;margin-top:2px;margin-bottom:2px;display:inline-block;">Victoria</span>';
+var waterlooBadge ='<span style="background:#6ECEB2;color:white;padding:3px 8px;border-radius:12px;font-size:12px;margin-right:4px;margin-top:2px;margin-bottom:2px;display:inline-block;">Waterloo &amp; City</span>';
+var elizabethBadge ='<span style="background:#7030A0;color:white;padding:3px 8px;border-radius:12px;font-size:12px;margin-right:4px;margin-top:2px;margin-bottom:2px;display:inline-block;">Elizabeth</span>';
+
+// Initialise badge holder as text string
+var badges = '';
+var pointLine = $feature.line // bring in the line associated with each feature
+
+// Create a dictionary to reference the badges and the text they match with
+var badgeLookup = {
+  "Bakerloo": bakerlooBadge,
+  "Central": centralBadge,
+  "Circle": circleBadge,
+  "District": districtBadge,
+  "Hammersmith & City": hammersmithBadge,
+  "Jubilee": jubileeBadge,
+  "Metropolitan": metBadge,
+  "Northern": northernBadge,
+  "Piccadilly": piccadillyBadge,
+  "Victoria": victoriaBadge,
+  "Waterloo & City": waterlooBadge,
+  "Elizabeth": elizabethBadge
+};
+
+Console(badgeLookup) // Check output
+
+// Iterate through each point's line data and match badges
+for (var line in badgeLookup) {
+  if (Find(line, pointLine) > -1) { // Find() returns a value of -1 if nothing is matched, so we only proceed if a match is found
+    badges += badgeLookup[line]; // '+=' means 'add to current content in badges'
+  }
+}
+
+// -------------------------------------------------------------
+// Return all as dictionary of rich text
+// -------------------------------------------------------------
+return {
+  type: "text",
+  text: badges
+};
+````
