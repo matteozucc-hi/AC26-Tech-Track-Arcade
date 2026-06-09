@@ -4,6 +4,9 @@ How did we make this list widget?
 
 ![alt text](image-2.png)
 
+
+![alt text](markdown-images/image.png)
+
 To use Arcade in either list, table, gauge or indicator widgets, you will need to enable 'Advanced formatting' in the widget settings:
 
 ![alt text](image-1.png)
