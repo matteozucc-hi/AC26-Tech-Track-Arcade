@@ -258,6 +258,7 @@ return {
 ## Extra Content! Construct Badges for Popups
 
 ![alt text](image-6.png)
+
 Are you also wondering how we got these underground line badges into our popups?
 
 Popups are constructed with html, so we can use html to create text surrounded by specific colours. The code below shows an example of how this can be done when one feature might match multiple badges (e.g., as King's Cross St. Pancras does)

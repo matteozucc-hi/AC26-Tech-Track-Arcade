@@ -1,9 +1,11 @@
 # Configure List Widgets with Arcade
 
 How did we make this list widget?
+
 ![alt text](image-2.png)
 
 To use Arcade in either list, table, gauge or indicator widgets, you will need to enable 'Advanced formatting' in the widget settings:
+
 ![alt text](image-1.png)
 
 This opens up the Arcade editor, where we can define as many attribute expressions as we want in one place, all returned in a dictionary and made available to paste in our template later on.
